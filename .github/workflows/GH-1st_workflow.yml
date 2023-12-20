@@ -1,6 +1,8 @@
 name:  GH Actions 1st workflow
 on:
-    push
+    push:
+       branches:
+         - main    
 jobs:
     first_job:
       runs-on: ubuntu-latest
@@ -14,7 +16,7 @@ jobs:
             cat README.md
         - name: Add the new items to README.md
           run: | 
-            echo "Call resusable workflow from another repository" | tee >> README.md  
+            echo "# 4. Call resusable workflow from another repository" | tee >> README.md  
           
          
 
