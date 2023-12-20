@@ -12,6 +12,12 @@ jobs:
             echo "This is the 1st Githbu Action Job"  
             ls -ltra
             cat README.md
+        - name: Add the new items to README.md
+          run: | 
+            echo "Call resusable workflow from another repository" | tee >> README.md  
+          
+         
+
             
             
   #      #       - name: List files
