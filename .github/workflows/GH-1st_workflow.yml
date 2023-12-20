@@ -1,0 +1,23 @@
+name:  GH Actions 1st workflow
+on:
+    push
+jobs:
+    first_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Check Repo
+          uses: action/checkout@v4
+        - name: List and Read file
+          run: | 
+            echo "This is the 1st Githbu Action Job"  
+            ls -ltra
+            cat README.md
+            
+            
+  #      #       - name: List files
+  #      #       - name: List files
+  #      #       - name: List files     
+
+
+
+      
